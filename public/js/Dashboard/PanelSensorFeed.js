@@ -15,7 +15,7 @@ class SensorFeed extends DashboardPanelSensorData {
   }
 
   socketConnect(chart) {
-    if (!window.socket) window.socket = io.connect("http://localhost:3000");
+    if (!window.socket) window.socket = io.connect("https://cogbim.azurewebsites.net/");
 
     window.socket.on("SensorStream", (data) => {
       this.addData(chart, data);
