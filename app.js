@@ -46,6 +46,7 @@ Socket.io Setting
 */
 
 io.on("connection", function () {
+  io.set('transports', ['websocket','xhr-polling']);
   console.log("A connection to Socket has been established.");
 });
 
