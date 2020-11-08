@@ -15,8 +15,8 @@ class SensorFeed extends DashboardPanelSensorData {
   }
 
   socketConnect(chart) {
-    if (!window.socket) window.socket = io.connect("http://localhost:8080", {transports:['websocket','xhr-polling']});
-
+    //if (!window.socket) window.socket = io.connect("http://localhost:8080", {transports:['websocket','xhr-polling']});
+    if (!window.socket) window.socket = io.connect("http://localhost:8080");
     window.socket.on("SensorStream", (data) => {
       this.addData(chart, data);
     });
