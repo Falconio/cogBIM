@@ -1,2 +1,2 @@
-# cogBIM
-Digital Twins in AEC Industry
+# cogBIM Viewer
+A customized version of Autodesk Forge
